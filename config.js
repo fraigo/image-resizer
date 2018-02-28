@@ -1,0 +1,90 @@
+
+var sizes=[];
+sizes["default"]=[
+	{width:16,height:16},
+	{width:32,height:32},
+	{width:64,height:64},
+	{width:128,height:128},
+	{width:196,height:196},
+	{width:256,height:256},
+	{width:512,height:512},
+	{width:1024,height:500},
+	{width:180,height:120},
+];
+sizes["simple"]=[
+	{width:16,height:16},
+	{width:32,height:32},
+	{width:64,height:64},
+	{width:128,height:128},
+	{width:196,height:196},
+	{width:256,height:256},
+	{width:512,height:512},
+	{width:1024,height:500},
+	{width:180,height:120},
+];
+sizes["icon/android"]=[
+	{width:36,height:36,id:'ldpi'},
+	{width:48,height:48,id:'mdpi'},
+	{width:72,height:72,id:'hdpi'},
+	{width:96,height:96,id:'xhdpi'},
+	{width:144,height:144,id:'xxhdpi'},
+	{width:192,height:192,id:'xxxhdpi'},
+];
+sizes["icon/windows"]=[
+	{width:30,height:30,id:'Square30x30',scale:'100'},
+	{width:44,height:44,id:'Square44x44',scale:'100'},
+	{width:70,height:70,id:'Square70x70',scale:'100'},
+	{width:71,height:71,id:'Square71x71',scale:'100'},
+	{width:150,height:150,id:'Square150x150',scale:'100'},
+	{width:310,height:310,id:'Square310x310',scale:'100'},
+	{width:106,height:106,id:'Square44x44',scale:'240'},
+	{width:170,height:170,id:'Square71x71',scale:'240'},
+	{width:360,height:360,id:'Square150x150',scale:'240'},
+	{width:50,height:50,id:'Store',scale:'100'},
+	{width:120,height:120,id:'Store',scale:'240'},
+	{width:310,height:150,id:'Wide310x150',scale:'100'},
+	{width:744,height:360,id:'Wide310x150',scale:'240'},
+];
+sizes["icon/ios"]=[
+	{width:57,height:57,id:'',scale:''},
+	{width:114,height:114,id:'',scale:'@2x'},
+	{width:40,height:40,id:'-40',scale:''},
+	{width:80,height:80,id:'-40',scale:'@2x'},
+	{width:50,height:50,id:'-50',scale:''},
+	{width:100,height:100,id:'-50',scale:'@2x'},
+	{width:60,height:60,id:'-60',scale:''},
+	{width:120,height:120,id:'-60',scale:'@2x'},
+	{width:180,height:180,id:'-60',scale:'@3x'},
+	{width:72,height:72,id:'-72',scale:''},
+	{width:144,height:144,id:'-72',scale:'@2x'},
+	{width:76,height:76,id:'-76',scale:''},
+	{width:152,height:152,id:'-76',scale:'@2x'},
+	{width:29,height:29,id:'-small',scale:''},
+	{width:58,height:58,id:'-small',scale:'@2x'},
+	{width:87,height:87,id:'-small',scale:'@3x'},
+];
+sizes["icon/wp8"]=[
+	{width:99,height:99,id:'ApplicationIcon',scale:''},
+	{width:159,height:159,id:'Background',scale:''},
+];
+sizes["screen/android"]=[
+	{width:320,height:240,id:'ldpi',scale:'land'},
+	{width:480,height:320,id:'mdpi',scale:'land'},
+	{width:800,height:480,id:'hdpi',scale:'land'},
+	{width:1280,height:720,id:'xhdpi',scale:'land'},
+	{width:240,height:320,id:'ldpi',scale:'port'},
+	{width:320,height:480,id:'mdpi',scale:'port'},
+	{width:480,height:800,id:'hdpi',scale:'port'},
+	{width:720,height:1280,id:'xhdpi',scale:'port'},
+];
+
+var names=[];
+names["default"]="{image}.{width}x{height}";
+names["default+size"]="{image}";
+names["icon/android"]="drawable_{id}_icon";
+names["icon/ios"]="{id}Logo.scale-{scale}";
+names["icon/windows"]="{id}Logo.scale-{scale}";
+names["icon/wp8"]="{id}";
+names["screen/android"]="drawable-{scale}-{id}-screen";
+
+

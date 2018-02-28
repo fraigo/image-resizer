@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Image resizer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Francisco Igor, Resume, Web developer">
+	<meta name="description" content="Image resizer, to resize and convert PNG SVG JPG files to PNG file in multiple sizes.">
+	<meta property="og:title" content="Image Resizer"/>
+	<meta property="og:description" content="Image resizer, to resize and convert PNG SVG JPG files to PNG file in multiple sizes."/>
+	<meta property="og:url" content="https://fraigo.github.io/image-resizer/"/>
+	<meta property="og:site_name" content="Image Resizer"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="http://fraigo.github.io/image-resizer/logo.png"/>
+	<meta property="og:image:width" content="256"/>
+	<meta property="og:image:height" content="256"/>
+	<link rel="shortcut icon" href="logo.png">
+	<link rel="icon" type="image/png" href="logo.png" sizes="256x256">
+	<link rel="apple-touch-icon" sizes="256x256" href="logo.png">
+</head>
+<body >
+	<div class="header">
+		<div class="title">
+		Image Resizer
+		</div>
+		<div class="icons">
+		Help
+		</div>
+	</div>
+
+	<table width="100%">
+		<tr>
+		<td valign=top width=200>
+			<input type=file id=filename accept=".png,.svg,.gif,.jpg" onchange="selectFile(this)" class="hidden">
+			<div><b>Select local image</b></div>
+			<button  class="open" type="button" onclick="openFile()">Select file</button>
+			<div><b>Image image</b></div>
+			<input type=text class="panel-input" id=image value="image">
+			<div><b>File name</b></div>
+			<input type=text class="panel-input" id=imgname value="{image}.{width}x{height}">
+			<div><b>Configuration set</b></div>
+			<select id="config" class="panel-input" onchange="changeConfig(this.value)" >
+			<option value="default">default</option>
+			</select>
+			<button  class="resize" type="button" onclick="selectFile()">Resize</button>
+			<div><b>Image preview</b></div>
+			<img src="blank.png" id=original >
+		</td>
+		<td valign=top align=center >
+			<div id="container" class=""></div>
+		</td>
+		</tr>
+	</table>
+
+	<div class="debug" id="footer"></div>
+
+<script type="text/javascript" src="resizer.js"></script>
+<script type="text/javascript" src="config.js"></script>
+<script>
+
+//fill sizes
+document.body.onload=function(e){
+	var config=document.getElementById("config");
+	config.innerHTML="";
+	for(var name in sizes){
+		var o=document.createElement("option");
+		o.text=name;
+		o.value=name;
+		config.appendChild(o);
+	}
+}
+
+
+
+//Write error details
+window.onerror = function(msg, url, line, col, error) {
+	var footer=document.getElementById("footer");
+	err=document.createElement('pre');
+	err.innerText=msg+"\n"+url+":"+line+"("+col+")";
+    footer.appendChild(err);
+}
+
+	
+</script>
+
+</body>
+</html>
