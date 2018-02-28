@@ -24,7 +24,7 @@
 		Image Resizer
 		</div>
 		<div class="icons">
-		Help
+		<a href="https://github.com/fraigo/image-resizer"><img src="https://assets-cdn.github.com/pinned-octocat.svg" height="32"></a>
 		</div>
 	</div>
 
@@ -34,9 +34,9 @@
 			<input type=file id=filename accept=".png,.svg,.gif,.jpg" onchange="selectFile(this)" class="hidden">
 			<div><b>Select local image</b></div>
 			<button  class="open" type="button" onclick="openFile()">Select file</button>
-			<div><b>Image image</b></div>
+			<div><b>Image name</b></div>
 			<input type=text class="panel-input" id=image value="image">
-			<div><b>File name</b></div>
+			<div><b>File name format</b></div>
 			<input type=text class="panel-input" id=imgname value="{image}.{width}x{height}">
 			<div><b>Configuration set</b></div>
 			<select id="config" class="panel-input" onchange="changeConfig(this.value)" >
@@ -47,7 +47,23 @@
 			<img src="blank.png" id=original >
 		</td>
 		<td valign=top align=center >
-			<div id="container" class=""></div>
+			<div id="container" class="">
+				<div id="help">
+					<h2>Quick start</h2>
+					<ol>
+						<li>Open an image from your computer using the <b>Select file</b> button.</li>
+						<li>Press the <b>Resize</b> button to start generating default resized images</li>
+						<li>Clic in some image generated to <b>download</b> a copy</li>
+					</ol>
+
+					Optionally, you can do some additional configurations to get more specific output:
+					<ul>
+						<li>Enter an <b>Image name</b>. It will be the base name for your exported images.</li>
+						<li>Enter a <b>File name format</b>. You can compose a file name using {name} {width} {height}.</li>
+						<li>Select a <b>Configuration set</b>. Each set has predefined sizes and filename formats for different targets (android, iOS,windows)</li>
+					</ul>
+				</div>
+			</div>
 		</td>
 		</tr>
 	</table>
