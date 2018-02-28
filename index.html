@@ -1,11 +1,18 @@
+<!doctype html>
 <html>
+<!--
+
+ Image Resizer
+ @author Francisco Igor franciscoigor@gmail.com
+
+-->
 <head>
 	<title>Image resizer</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="utf-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Francisco Igor, Resume, Web developer">
-	<meta name="description" content="Image resizer, to resize and convert PNG SVG JPG files to PNG file in multiple sizes.">
+	<meta name="keywords" content="Image resizer, SVG to PNG converter, SVG resizer">
+	<meta name="description" content="Image resizer, to resize and convert PNG SVG JPG files to PNG file in multiple sizes. Image resizer, SVG to PNG converter, SVG and PNG resizer.">
 	<meta property="og:title" content="Image Resizer"/>
 	<meta property="og:description" content="Image resizer, to resize and convert PNG SVG JPG files to PNG file in multiple sizes."/>
 	<meta property="og:url" content="https://fraigo.github.io/image-resizer/"/>
@@ -45,7 +52,7 @@
 			<select id="config" class="panel-input" onchange="changeConfig(this.value)" >
 			<option value="default">default</option>
 			</select>
-			<button  class="resize" type="button" onclick="selectFile()">Resize</button>
+			<button  class="resize" type="button" onclick="resizeFile()">Resize</button>
 			<div><b>Image preview</b></div>
 			<img src="blank.png" id=original >
 		</td>
