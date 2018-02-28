@@ -7,11 +7,10 @@ function openFile() {
 function selectFile(updatePrefix){
 	var file=document.getElementById("filename");
 	image=document.getElementById("image");
-	console.log(file.files[0]);
 	if (updatePrefix){
 		image.value=file.files[0].name.replace(".png","").replace(".svg","").replace(".gif","").replace(".jpg","");
 		image.fileType=file.files[0].type;
-	}else{
+	}else if(!file.files[0]){
 		file.click();
 		return;
 	}

@@ -37,12 +37,21 @@ a, a:visited, a:active {
 
 .header{
 	background-color:#000;
-	font-size: 2em;
+	font-size: 1.6em;
 	padding: 5px;
 }
 
 .header > div{
 	display:inline-block;
+}
+
+.header > .icon{
+	vertical-align: top;
+}
+
+
+.header > .icon > img {
+	border:5px;
 }
 
 .header > .icons{

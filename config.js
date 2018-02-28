@@ -80,7 +80,7 @@ sizes["screen/android"]=[
 
 var names=[];
 names["default"]="{image}.{width}x{height}";
-names["default+size"]="{image}";
+names["simple"]="{image}";
 names["icon/android"]="drawable_{id}_icon";
 names["icon/ios"]="{id}Logo.scale-{scale}";
 names["icon/windows"]="{id}Logo.scale-{scale}";
