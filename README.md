@@ -46,4 +46,7 @@ This application is a stand-alone HTML application with *no library dependencies
 
 Feel free to [Fork](https://github.com/fraigo/image-resizer/fork) and contribute to this project.
 
+## Preview / Demo
+
+ https://fraigo.github.io/image-resizer/
 
