@@ -38,9 +38,7 @@
 		</div>
 	</div>
 
-	<table width="100%">
-		<tr>
-		<td valign=top width=200>
+	<div class="tools">
 			<input type=file id=filename accept=".png,.svg,.gif,.jpg" onchange="selectFile(this)" class="hidden">
 			<div><b>Select local image</b></div>
 			<button  class="open" type="button" onclick="openFile()">Select file</button>
@@ -55,8 +53,8 @@
 			<button  class="resize" type="button" onclick="resizeFile()">Resize</button>
 			<div><b>Image preview</b></div>
 			<img src="blank.png" id=original >
-		</td>
-		<td valign=top align=center >
+	</div>
+	<div class="content">
 			<div id="container" class="">
 				<div id="help">
 					<h2>Quick start</h2>
@@ -74,9 +72,7 @@
 					</ul>
 				</div>
 			</div>
-		</td>
-		</tr>
-	</table>
+	</div>
 
 	<div class="debug" id="footer"></div>
 
