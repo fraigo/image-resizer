@@ -95,6 +95,7 @@ sizes["screen/android"]=[
 var names=[];
 names["default"]="{image}.{width}x{height}";
 names["simple"]="{image}";
+names["vue-project"]="{id}";
 names["icon/android"]="drawable_{id}_icon";
 names["icon/ios"]="{id}Logo.scale-{scale}";
 names["icon/windows"]="{id}Logo.scale-{scale}";
