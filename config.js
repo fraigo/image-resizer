@@ -25,7 +25,7 @@ sizes["simple"]=[
 sizes["screen"]=[
 	{width:1024,height:768},
 	{width:1366,height:768},
-	{width:1290,height:720},
+	{width:1280,height:720},
 	{width:1920,height:1080},
 ];
 sizes["vue-project"]=[
@@ -101,6 +101,7 @@ sizes["screen/android"]=[
 var names=[];
 names["default"]="{image}.{width}x{height}";
 names["simple"]="{image}";
+names["screen"]="{image}.{width}x{height}";
 names["vue-project"]="{id}";
 names["icon/android"]="drawable_{id}_icon";
 names["icon/ios"]="{id}Logo.scale-{scale}";
