@@ -22,6 +22,12 @@ sizes["simple"]=[
 	{width:1024,height:500},
 	{width:180,height:120},
 ];
+sizes["screen"]=[
+	{width:1024,height:768},
+	{width:1366,height:768},
+	{width:1290,height:720},
+	{width:1920,height:1080},
+];
 sizes["vue-project"]=[
 	{width:16,height:16,id:'favicon-16x16'},
 	{width:32,height:32,id:'favicon-32x32'},
