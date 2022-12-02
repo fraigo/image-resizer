@@ -122,7 +122,7 @@ function createCanvas(img,width,height,name,type){
  * @param {*} value 
  */
 function changeConfig(value){
-	var customsize=document.getElementById("custom");
+	var customsize=document.getElementById("customsize");
 	imagename=document.getElementById("imgname");
 	imagename.value=names[value];
 	if (value=='custom'){
