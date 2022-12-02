@@ -50,6 +50,11 @@
 			<select id="config" class="panel-input" onchange="changeConfig(this.value)" >
 			<option value="default">default</option>
 			</select>
+			<div id="customsize" style="display:none">
+				<b>Custom size</b>
+				<br>
+				<input type=text class="panel-input" id=custom value="" onchange="sizes['custom'].width=this.value.split('x')[0];sizes['custom'].height=this.value.split('x')[1]" placeholder="Size in pixels eg:128x128">
+			</div>
 			<button  class="resize" type="button" onclick="resizeFile()">Resize</button>
 			<div><b>Image preview</b></div>
 			<img src="blank.png" id=original >

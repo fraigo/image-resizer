@@ -122,8 +122,14 @@ function createCanvas(img,width,height,name,type){
  * @param {*} value 
  */
 function changeConfig(value){
+	var customsize=document.getElementById("custom");
 	imagename=document.getElementById("imgname");
 	imagename.value=names[value];
+	if (value=='custom'){
+		customsize.style.display=''
+	} else {
+		customsize.style.display='none'
+	}
 }
 
 /**

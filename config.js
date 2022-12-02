@@ -97,6 +97,9 @@ sizes["screen/android"]=[
 	{width:480,height:800,id:'hdpi',scale:'port'},
 	{width:720,height:1280,id:'xhdpi',scale:'port'},
 ];
+sizes["custom"] = [
+	{width:128,height:128,id:''},
+];
 
 var names=[];
 names["default"]="{image}.{width}x{height}";
@@ -108,5 +111,6 @@ names["icon/ios"]="{id}Logo.scale-{scale}";
 names["icon/windows"]="{id}Logo.scale-{scale}";
 names["icon/wp8"]="{id}";
 names["screen/android"]="drawable-{scale}-{id}-screen";
+names["custom"]="{image}.{width}x{height}";
 
 
